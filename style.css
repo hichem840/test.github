@@ -1,0 +1,11 @@
+h1 {
+  font-size: 15rem;
+  color: yellow;
+  text-align: center;
+  text-shadow: 0px 5px 0px tomato;
+}
+body {
+  color: whitesmoke;
+  border: 2px solid blue;
+  border-radius: 15px;
+}
