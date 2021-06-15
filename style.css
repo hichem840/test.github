@@ -9,3 +9,8 @@ body {
   border: 2px solid blue;
   border-radius: 15px;
 }
+li {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+}
