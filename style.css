@@ -1,16 +1,101 @@
-h1 {
-  font-size: 15rem;
-  color: yellow;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h5 {
   text-align: center;
-  text-shadow: 0px 5px 0px tomato;
+  color: white;
+ 
+}
+
+h1 {
+  text-transform: uppercase;
+}
+h5 {
+  margin: -8px;
+}
+.premier{
+  height:70px;
+  background-color: mediumspringgreen;
+  padding-bottom: 0px;
 }
 body {
-  color: whitesmoke;
-  border: 2px solid blue;
-  border-radius: 15px;
+  background: url(https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+    no-repeat fixed center/cover;
+  height: 100%;
 }
-li {
-  height: 50px;
-  width: 100px;
+.choix{
+  margin:2px;
+  padding:5px;
+ text-align: right;
+
+}
+
+.flexbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "i1 i2 i3"
+    "i4 i5 i6";
+}
+img {
+  border: 2px solid whitesmoke;
+  margin: 20px 20px 0px;
+  height: 150px;
+  width: 150px;
+}
+
+.moh {
+  display: grid;
+  grid-auto-columns: 70% 30%;
+}
+
+bouton {
+  background-color: white ;
+  pointe;cons;
+  /* border: 2px solid white; */
+  color:mediumseagreen;
   text-align: center;
+  width: 150px;
+  margin-left: 20px;
+  padding-bottom: 0px;
+}
+form {
+  display: grid;
+  grid-template-coluns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1"
+    "i2"
+    "ta "
+    "bt";
+}
+input,
+textarea {
+  text-align: center;
+  margin: 5px auto;
+  height: 45px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid blue;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+#firstname {
+  grid-area: i1;
+}
+#surname {
+  grid-area: i2;
+}
+textarea {
+  grid-area: ta;
+}
+input[type="submit"] {
+  grid-area: bt;
+  background-color: blue;
+  color: white;
 }
