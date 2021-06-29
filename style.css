@@ -8,7 +8,7 @@ h1,
 h5 {
   text-align: center;
   color: white;
- 
+  
 }
 
 h1 {
@@ -31,8 +31,26 @@ body {
   margin:2px;
   padding:5px;
  text-align: right;
+ cursor: pointer;
 
 }
+.hic{
+  border:1px solid #f1f1f1;
+  border-radius:5px;
+}
+
+button :hover{
+  transition:0.3s;
+  height:12px;
+  width:10px;
+  background:blue ;
+  
+}
+
+.grid{
+ margin: 15px auto;
+}
+
 
 .flexbox {
   display: grid;
@@ -51,7 +69,7 @@ img {
 
 .moh {
   display: grid;
-  grid-auto-columns: 70% 30%;
+  grid-auto-columns: 65% 35%;
 }
 
 bouton {
@@ -63,10 +81,13 @@ bouton {
   width: 150px;
   margin-left: 20px;
   padding-bottom: 0px;
+  cursor: pointer;
 }
 form {
+  margin:20px;
+  padding:30px;
   display: grid;
-  grid-template-coluns: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "i1"
@@ -98,4 +119,11 @@ input[type="submit"] {
   grid-area: bt;
   background-color: blue;
   color: white;
+}
+
+input[type="submit"]:hover {
+  background-color : mediumseagreen;
+  color: white;
+  transition: 0.3s;
+  border: 3px solid mediumspringgreen;
 }
